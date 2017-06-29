@@ -300,6 +300,8 @@ ActionButton.defaultProps = {
   radius: 100,
   btnOutRange: 'rgba(0,0,0,1)',
   btnOutRangeTxt: 'rgba(255,255,255,1)',
+  symbolSize: 30,
+  symbolWeight: 'normal',
 };
 
 const styles = StyleSheet.create({
@@ -333,8 +335,8 @@ const styles = StyleSheet.create({
   },
   btnText: {
     marginTop: -4,
-    fontSize: 60,
-	fontWeight: 'bold',
+    fontSize: this.props.symbolSize,
+	fontWeight: this.props.symbolWeight,
     backgroundColor: 'transparent',
     position: 'relative',
   },

@@ -95,6 +95,10 @@ Also this example uses `react-native-vector-icons` for the button Icons.
 | backdrop       | Component     | false               | Custom component for use as Backdrop (i.e. [BlurView](https://github.com/react-native-fellowship/react-native-blur#blur-view), [VibrancyView](https://github.com/react-native-fellowship/react-native-blur#vibrancy-view))
 | degrees        | number        | 135                 | degrees to rotate icon
 
+##### Additional Props
+ - `symbolSize` For set the `+` symbol size, type `number`
+ - `symbolWeight` For set the `+` symbol weight (same as fontWeight), type `string`
+
 ##### ActionButton.Item:
 | Property      | Type          | Default             | Description |
 | ------------- |:-------------:|:------------:       | ----------- |
