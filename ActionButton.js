@@ -333,7 +333,8 @@ const styles = StyleSheet.create({
   },
   btnText: {
     marginTop: -4,
-    fontSize: 24,
+    fontSize: 60,
+	fontWeight: 'bold',
     backgroundColor: 'transparent',
     position: 'relative',
   },
