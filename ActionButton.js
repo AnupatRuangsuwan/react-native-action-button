@@ -163,6 +163,8 @@ export default class ActionButton extends Component {
       <Animated.Text
         style={[styles.btnText,
                 {
+	    	  fontSize: this.props.symbolSize,
+	    	  fontWeight: this.props.symbolWeight,
                   color: this.state.anim.interpolate({
                     inputRange: [0, 1],
                     outputRange: [this.props.buttonTextColor, this.props.btnOutRangeTxt]
@@ -281,6 +283,8 @@ ActionButton.propTypes = {
   radius: PropTypes.number,
   children: PropTypes.node,
   position: PropTypes.oneOf(['left', 'center', 'right', 'center_right']),
+  symbolSize: PropTypes.number,
+  symbolWeight: PropTypes.string
 };
 
 ActionButton.defaultProps = {
@@ -335,8 +339,6 @@ const styles = StyleSheet.create({
   },
   btnText: {
     marginTop: -4,
-    fontSize: this.props.symbolSize,
-	fontWeight: this.props.symbolWeight,
     backgroundColor: 'transparent',
     position: 'relative',
   },
